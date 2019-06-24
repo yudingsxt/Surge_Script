@@ -2,7 +2,7 @@ const path1 = '/user/profile';
 const path2 = '/v3plus/index/channel';
 const path3 = '/v3plus/video/getTopFeed';
 const path4 = '/v3plus/index/todayChoice';
-const path5 = '/v3plus/medal/getAll';
+const path5 = '/v3plus/medal/getAllMedalDetailWithPiece';
 
 var body = $response.body;
 var url = $request.url
