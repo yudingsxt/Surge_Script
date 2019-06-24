@@ -1,11 +1,4 @@
-var body=$response.body;
-var url=$request.url;
-const path = '/mp/getappmsgad?f=';
-
-if (url.indexOf(path) != -1) {
-    let obj = JSON.parse(body);
-    obj.advertisement_info = [];
-    body = JSON.stringify(obj);
-}
-
+body = JSON.parse($response.body);
+body.advertisement_info = [];
+body = JSON.stringify(body);
 $done({body});
