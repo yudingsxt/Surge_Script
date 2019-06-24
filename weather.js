@@ -10,8 +10,8 @@ $httpClient.get(weaapi, function(error, response, data){
         console.log(obj);
         var tem = obj.tem;
         var wea = obj.wea;
-        var time = "更新于："+obj.update_time;
-        let wmation = [tem,wea,time];
+        var air = obj.air;
+        let wmation = [tem,wea,air];
         $notification.post(wmation[1], wmation[0], wmation[2]);
         $done();
     }
