@@ -22,7 +22,7 @@ $httpClient.get(hfapi, function(error, response, data){
     } else {
         var mm = getwmatioin(data);
         var title = "所在城市："+ mm[0];
-        var subtitle = "天气状况："+mm[1]+"  "+mm[3]+"  "+mm[5];
+        var subtitle = "天气状况："+mm[1]+"  "+mm[3]+"  "+mm[5]+"Km/s";
         var mation = "体感温度："+mm[2]+"℃"+"  "+"空气湿度："+mm[4]+"%"+"  "+ "\n降水量："+mm[6];
         $notification.post(title, subtitle, mation);
         $done();
