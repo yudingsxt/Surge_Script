@@ -7,7 +7,7 @@ function getwmatioin(data){
     let temp = obj.HeWeather6[0].now["fl"];
     let wind = obj.HeWeather6[0].now["wind_dir"];
     let wind_spd = obj.HeWeather6[0].now["wind_spd"];
-    let pcpn = obj.HEWeather6[0].now["pcpn"];
+    let pcpn = obj.HeWeather6[0].now["pcpn"];
     let hum = obj.HeWeather6[0].now["hum"];
     let mm = [city, wea, temp, wind, hum, wind_spd, pcpn];
     return mm
