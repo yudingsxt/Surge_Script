@@ -8,6 +8,7 @@ if (url.indexOf(path) != -1){
   obj.expired= 0;
   obj.hintsForRecharge.predictedChapterPrice=0;
   obj.isAutoRenewable=1;
+  obj.permanent=1;
   body = JSON.stringify(obj);
 }
 $done({body});
