@@ -1,4 +1,4 @@
-let url = "https://ip.sb/api/"
+let url = "https://ip.sb/api/geoip"
 
 $httpClient.get(url, function(error, response, data){
     let jsonData = JSON.parse(data)
