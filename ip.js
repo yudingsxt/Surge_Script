@@ -6,7 +6,7 @@ $httpClient.get(url, function(error, response, data){
     let country = jsonData.country
     let emoji = getFlagEmoji(jsonData.country_code)
     let city = jsonData.city
-    let isp = jsonData.isp
+    let isp = jsonData.organization
     
   body = {
     title: "网络信息",
